@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/main.css" />
     <title>Vite App</title>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap");
@@ -143,10 +144,10 @@
     </header>
     <!-- ========== END HEADER ========== -->
 
-    <section>
+    <section class="">
       <!-- Jumbotron -->
       <div
-        class="relative overflow-hidden h-dvh bg-cover bg-no-repeat p-12 text-center"
+        class="relative w-full overflow-hidden h-dvh bg-cover bg-no-repeat p-12 text-center"
         style="background-image: url('/src/img/bg-herosection-3.jpg')"
       >
         <div
@@ -213,84 +214,71 @@
       <!-- Jumbotron -->
 
       <!-- Card Blog -->
-      <div class="flex py-8 mt-14 gap-x-8 items-center justify-center">
-        <a
-          class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-          href="#"
-        >
-          <img
-            src="https://loremflickr.com/800/600/girl"
-            class="shadow overflow-hidden border"
-            alt="Image Description"
-          />
-          <div class="px-6 mt-8">
-            <h4 class="font-bold text-xl">Exercises</h4>
-            <p class="mt-2 text-gray-600">
-              Create Exercises for any subject with the topics you and your
-              students care about.
-            </p>
-            <div class="mt-5">
-              <button
-                type="button"
-                class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900"
-              >
-                Start Creating
-              </button>
+      <div
+        class="flex flex-col md:flex-row py-8 mt-14 gap-x-12 gap-y-6 md:gapy-0 items-center justify-center"
+      >
+        <div class="py-3">
+          <a
+            class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
+            href="#"
+          >
+            <img
+              src="https://i.pinimg.com/474x/19/e0/26/19e026d5b97e2548582d2085ba6b8ad7.jpg"
+              class="shadow overflow-hidden object-cover w-[500px] h-[240px]"
+              alt="Image Description"
+            />
+            <div class="px-6 mt-8">
+              <h4 class="font-bold text-xl">Sleek craftsmanship</h4>
+              <p class="mt-2 text-gray-600">
+                Sleek craftsmanship means stylish, durable products made with
+                attention to detail. You get beauty and quality in every piece!
+              </p>
+              <div class="mt-5"></div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
         <!--  -->
-        <a
-          class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-          href="#"
-        >
-          <img
-            src="https://loremflickr.com/800/600/girl"
-            class="shadow overflow-hidden border"
-            alt="Image Description"
-          />
-          <div class="px-6 mt-8">
-            <h4 class="font-bold text-xl">Exercises</h4>
-            <p class="mt-2 text-gray-600">
-              Create Exercises for any subject with the topics you and your
-              students care about.
-            </p>
-            <div class="mt-5">
-              <button
-                type="button"
-                class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900"
-              >
-                Start Creating
-              </button>
+        <div>
+          <a
+            class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
+            href="#"
+          >
+            <img
+              src="https://i.pinimg.com/564x/bb/ec/91/bbec91c83cafcf91254ce9f26c695b7a.jpg"
+              class="shadow overflow-hidden object-cover w-[500px] h-[240px]"
+              alt="Image Description"
+            />
+            <div class="px-6 mt-8">
+              <h4 class="font-bold text-xl">Exercises</h4>
+              <p class="mt-2 text-gray-600">
+                Create Exercises for any subject with the topics you and your
+                students care about.
+              </p>
+              <div class="mt-5"></div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
         <!--  -->
-        <a
-          class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-          href="#"
-        >
-          <img
-            src="https://loremflickr.com/800/600/girl"
-            class="shadow overflow-hidden border"
-            alt="Image Description"
-          />
-          <div class="px-6 mt-8">
-            <h4 class="font-bold text-xl">Exercises</h4>
-            <p class="mt-2 text-gray-600">
-              Create Exercises for any subject with the topics you and your
-              students care about.
-            </p>
-            <div class="mt-5">
-              <button
-                type="button"
-                class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900"
-              >
-                Start Creating
-              </button>
+        <div class="relative">
+          <a
+            class="max-w-[20rem] hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
+            href="#"
+          >
+            <img
+              src="https://i.pinimg.com/564x/43/ba/39/43ba391a617eac85dd8094d0fcdd1675.jpg"
+              class="shadow overflow-hidden object-cover w-[500px] h-[240px]"
+              alt="Image Description"
+            />
+            <div class="px-6 mt-8">
+              <h4 class="font-bold text-xl">Exercises</h4>
+              <p class="mt-2 text-gray-600">
+                Create Exercises for any subject with the topics you and your
+                students care about.
+              </p>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
       <!-- End Card Blog -->
     </section>
@@ -298,9 +286,6 @@
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/js/homepage.js"></script>
     <script type="module" src="./node_modules/preline/dist/preline.js"></script>
-    <script
-      type="text/javascript"
-      src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
-    ></script>
+    <script src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
