@@ -1,0 +1,26 @@
+/* tailwind directives */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  /* global configuration */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.spin {
+  display: inline-block; /* Make sure the div is inline-block for proper rotation */
+  animation: spin 20s linear infinite; /* Use the spin keyframes defined below */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
