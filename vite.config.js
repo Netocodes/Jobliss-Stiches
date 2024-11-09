@@ -1,9 +1,11 @@
 // vite.config.js
 import tailwindcss from "tailwindcss";
+import external from "vite-plugin-external";
+
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "github" ? "/Jobliss-Stiches/" : "./",
+  base: "./",
   server: {
     sourcemap: false,
     mime: {
@@ -11,7 +13,12 @@ export default defineConfig(({ mode }) => ({
       js: "application/javascript",
     },
   },
-  plugins: [
-    tailwindcss(), // Add Tailwind CSS as a plugin
-  ],
+  build: {
+    rollupOptions: {
+      external: [
+        "https://cdn.jsdelivr.net/npm/tw-elements@2.0.0/js/tw-elements.umd.min.js",
+      ],
+    },
+  },
+  plugins: [tailwindcss()],
 }));
