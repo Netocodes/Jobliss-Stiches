@@ -2,9 +2,9 @@ import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: "/", // Use root path for assets
+  base: mode === "production" ? "/Jobliss-Stiches/" : "./", // Set base URL differently in production
   server: {
-    sourcemap: false,
+    sourcemap: mode === "development", // Enable sourcemaps only in development
   },
   build: {
     rollupOptions: {
@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
         "https://cdn.jsdelivr.net/npm/tw-elements@2.0.0/js/tw-elements.umd.min.js",
       ],
     },
+    minify: mode === "production" ? "esbuild" : false, // Minify only in production
   },
   plugins: [tailwindcss()],
 }));
