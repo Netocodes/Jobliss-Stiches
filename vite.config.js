@@ -2,7 +2,7 @@ import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/Jobliss-Stiches/" : "/",
+  base: mode === "github" ? "/Jobliss-Stiches/" : "./",
   server: {
     sourcemap: mode === "development", // Enable sourcemaps only in development
   },
